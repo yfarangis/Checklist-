@@ -13,6 +13,7 @@
 		DC3B5D9928099D27008D620A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC3B5D9728099D27008D620A /* Main.storyboard */; };
 		DC3B5D9B28099D2A008D620A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC3B5D9A28099D2A008D620A /* Assets.xcassets */; };
 		DC3B5D9E28099D2A008D620A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC3B5D9C28099D2A008D620A /* LaunchScreen.storyboard */; };
+		DC3B5DAA280D928B008D620A /* ChecklistGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3B5DA9280D928B008D620A /* ChecklistGroup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		DC3B5D9A28099D2A008D620A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC3B5D9D28099D2A008D620A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC3B5D9F28099D2A008D620A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC3B5DA9280D928B008D620A /* ChecklistGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistGroup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		DC3B5D9028099D27008D620A /* Checklists */ = {
 			isa = PBXGroup;
 			children = (
+				DC3B5DA5280D9234008D620A /* Models */,
 				DC3B5D9128099D27008D620A /* AppDelegate.swift */,
 				DC3B5D9328099D27008D620A /* SceneDelegate.swift */,
 				DC3B5D9528099D27008D620A /* MainViewController.swift */,
@@ -65,6 +68,14 @@
 				DC3B5D9F28099D2A008D620A /* Info.plist */,
 			);
 			path = Checklists;
+			sourceTree = "<group>";
+		};
+		DC3B5DA5280D9234008D620A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DC3B5DA9280D928B008D620A /* ChecklistGroup.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +151,7 @@
 			files = (
 				DC3B5D9628099D27008D620A /* MainViewController.swift in Sources */,
 				DC3B5D9228099D27008D620A /* AppDelegate.swift in Sources */,
+				DC3B5DAA280D928B008D620A /* ChecklistGroup.swift in Sources */,
 				DC3B5D9428099D27008D620A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
