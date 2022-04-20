@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC00267328103A2F00D6ED6D /* GroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC00267228103A2F00D6ED6D /* GroupTableViewCell.swift */; };
 		DC3B5D9228099D27008D620A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3B5D9128099D27008D620A /* AppDelegate.swift */; };
 		DC3B5D9428099D27008D620A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3B5D9328099D27008D620A /* SceneDelegate.swift */; };
 		DC3B5D9628099D27008D620A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3B5D9528099D27008D620A /* MainViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC00267228103A2F00D6ED6D /* GroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTableViewCell.swift; sourceTree = "<group>"; };
 		DC3B5D8E28099D27008D620A /* Checklists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checklists.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC3B5D9128099D27008D620A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC3B5D9328099D27008D620A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,7 +26,6 @@
 		DC3B5D9828099D27008D620A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC3B5D9A28099D2A008D620A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC3B5D9D28099D2A008D620A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		DC3B5D9F28099D2A008D620A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC3B5DA9280D928B008D620A /* ChecklistGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistGroup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -39,6 +40,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC0026712810399600D6ED6D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DC00267228103A2F00D6ED6D /* GroupTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		DC3B5D8528099D27008D620A = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +67,7 @@
 		DC3B5D9028099D27008D620A /* Checklists */ = {
 			isa = PBXGroup;
 			children = (
+				DC0026712810399600D6ED6D /* Cells */,
 				DC3B5DA5280D9234008D620A /* Models */,
 				DC3B5D9128099D27008D620A /* AppDelegate.swift */,
 				DC3B5D9328099D27008D620A /* SceneDelegate.swift */,
@@ -65,7 +75,6 @@
 				DC3B5D9728099D27008D620A /* Main.storyboard */,
 				DC3B5D9A28099D2A008D620A /* Assets.xcassets */,
 				DC3B5D9C28099D2A008D620A /* LaunchScreen.storyboard */,
-				DC3B5D9F28099D2A008D620A /* Info.plist */,
 			);
 			path = Checklists;
 			sourceTree = "<group>";
@@ -153,6 +162,7 @@
 				DC3B5D9228099D27008D620A /* AppDelegate.swift in Sources */,
 				DC3B5DAA280D928B008D620A /* ChecklistGroup.swift in Sources */,
 				DC3B5D9428099D27008D620A /* SceneDelegate.swift in Sources */,
+				DC00267328103A2F00D6ED6D /* GroupTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
