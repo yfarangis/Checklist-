@@ -18,6 +18,7 @@
 		DC9D52AD2812CDFB003C3073 /* ChecklistItem .swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9D52AC2812CDFB003C3073 /* ChecklistItem .swift */; };
 		DC9D52B12812DF11003C3073 /* ChecklistItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9D52B02812DF11003C3073 /* ChecklistItemCell.swift */; };
 		DC9D52B32812DF93003C3073 /* GroupDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9D52B22812DF93003C3073 /* GroupDetailsTableViewController.swift */; };
+		DC9D52B5281687DD003C3073 /* AddingItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9D52B4281687DC003C3073 /* AddingItemsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		DC9D52AC2812CDFB003C3073 /* ChecklistItem .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChecklistItem .swift"; sourceTree = "<group>"; };
 		DC9D52B02812DF11003C3073 /* ChecklistItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistItemCell.swift; sourceTree = "<group>"; };
 		DC9D52B22812DF93003C3073 /* GroupDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDetailsTableViewController.swift; sourceTree = "<group>"; };
+		DC9D52B4281687DC003C3073 /* AddingItemsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingItemsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			children = (
 				DC3B5D9528099D27008D620A /* MainViewController.swift */,
 				DC9D52B22812DF93003C3073 /* GroupDetailsTableViewController.swift */,
+				DC9D52B4281687DC003C3073 /* AddingItemsTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				DC9D52AD2812CDFB003C3073 /* ChecklistItem .swift in Sources */,
 				DC9D52B12812DF11003C3073 /* ChecklistItemCell.swift in Sources */,
 				DC9D52B32812DF93003C3073 /* GroupDetailsTableViewController.swift in Sources */,
+				DC9D52B5281687DD003C3073 /* AddingItemsTableViewController.swift in Sources */,
 				DC3B5DAA280D928B008D620A /* ChecklistGroup.swift in Sources */,
 				DC3B5D9428099D27008D620A /* SceneDelegate.swift in Sources */,
 				DC00267328103A2F00D6ED6D /* GroupTableViewCell.swift in Sources */,
