@@ -54,6 +54,7 @@
                                     <outlet property="iconView" destination="28o-Fj-EVT" id="fAs-ff-XiS"/>
                                     <outlet property="subtitle" destination="7Qf-nh-GNg" id="rYI-nE-3CQ"/>
                                     <outlet property="titleLabel" destination="Ktb-gv-cNO" id="7Dv-7c-nf0"/>
+                                    <segue destination="XGu-lI-kfX" kind="show" id="vvK-gT-4ff"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -68,7 +69,7 @@
             </objects>
             <point key="canvasLocation" x="621.73913043478262" y="31.473214285714285"/>
         </scene>
-        <!--Group Details Table View Controller-->
+        <!--Birthdays-->
         <scene sceneID="j4g-gq-mZN">
             <objects>
                 <tableViewController id="XGu-lI-kfX" customClass="GroupDetailsTableViewController" customModule="Checklists" customModuleProvider="target" sceneMemberID="viewController">
@@ -95,6 +96,7 @@
                                         </label>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.forward" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="9qZ-Cy-OWd">
                                             <rect key="frame" x="373.5" y="26.5" width="12.5" height="36"/>
+                                            <color key="tintColor" red="0.28239779780000002" green="0.34648775920000002" blue="0.4336256047" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </imageView>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Lzr-Gx-pBd">
                                             <rect key="frame" x="343.5" y="35" width="20" height="19"/>
@@ -117,6 +119,7 @@
                                 <connections>
                                     <outlet property="tackle1" destination="9M4-2e-RXq" id="YjJ-4C-gTj"/>
                                     <outlet property="text1" destination="UiC-fr-sDb" id="xZQ-k0-tAS"/>
+                                    <segue destination="EIt-ll-FaT" kind="show" id="xcs-YK-1O2"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -125,6 +128,7 @@
                             <outlet property="delegate" destination="XGu-lI-kfX" id="wHG-pd-5Ir"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Birthdays" largeTitleDisplayMode="never" id="m5J-kE-ITA"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eez-Nv-mPf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -216,6 +220,7 @@
                                         <constraint firstItem="nuj-XM-wla" firstAttribute="leading" secondItem="la4-WQ-C7v" secondAttribute="leadingMargin" constant="3" id="9Z3-lh-axE"/>
                                         <constraint firstItem="v9r-Tz-kuW" firstAttribute="top" secondItem="la4-WQ-C7v" secondAttribute="top" constant="8" id="Fpd-EU-q0r"/>
                                         <constraint firstItem="v9r-Tz-kuW" firstAttribute="leading" secondItem="nuj-XM-wla" secondAttribute="trailing" constant="8" id="JdG-uz-uxr"/>
+                                        <constraint firstItem="nuj-XM-wla" firstAttribute="leading" secondItem="la4-WQ-C7v" secondAttribute="leadingMargin" constant="3" id="YBK-Sb-aYW"/>
                                         <constraint firstItem="v9r-Tz-kuW" firstAttribute="centerY" secondItem="nuj-XM-wla" secondAttribute="centerY" id="h9u-kY-J3d"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -226,6 +231,7 @@
                             <outlet property="delegate" destination="EIt-ll-FaT" id="ijz-Yg-0M5"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="f1S-UO-nim"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ne-ek-rDw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -247,7 +253,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b7Z-5d-8jz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-288.40579710144931" y="31.473214285714285"/>
+            <point key="canvasLocation" x="-91" y="31"/>
         </scene>
     </scenes>
     <resources>
