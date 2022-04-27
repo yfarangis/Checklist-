@@ -54,7 +54,7 @@
                                     <outlet property="iconView" destination="28o-Fj-EVT" id="fAs-ff-XiS"/>
                                     <outlet property="subtitle" destination="7Qf-nh-GNg" id="rYI-nE-3CQ"/>
                                     <outlet property="titleLabel" destination="Ktb-gv-cNO" id="7Dv-7c-nf0"/>
-                                    <segue destination="XGu-lI-kfX" kind="show" id="vvK-gT-4ff"/>
+                                    <segue destination="XGu-lI-kfX" kind="show" identifier="MainToGroupDetails " id="vvK-gT-4ff"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -119,7 +119,7 @@
                                 <connections>
                                     <outlet property="tackle1" destination="9M4-2e-RXq" id="YjJ-4C-gTj"/>
                                     <outlet property="text1" destination="UiC-fr-sDb" id="xZQ-k0-tAS"/>
-                                    <segue destination="EIt-ll-FaT" kind="show" id="xcs-YK-1O2"/>
+                                    <segue destination="EIt-ll-FaT" kind="show" identifier="GroupDetailstoAddingItem" id="xcs-YK-1O2"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
