@@ -42,7 +42,7 @@ class AddingItemsTableViewController: UITableViewController {
             let cell = tableView.dequeueReusableCell(withIdentifier: "SwitchCell", for: indexPath) as! SwitchCell
             return cell
         }else{
-        let cell = tableView.dequeueReusableCell(withIdentifier: "DateTimeCell", for: indexPath) as! DateTimeCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TimeDateCell", for: indexPath) as! TimeDateCell
            return cell
     }
     }
