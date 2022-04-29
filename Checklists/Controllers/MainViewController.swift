@@ -10,11 +10,13 @@ import UIKit
 class MainViewController: UITableViewController {
     let groups: [ChecklistGroup] = [
         ChecklistGroup(title: "Brithdays", imageName: "Birthdays", items: [
-            ChecklistItem(isChecked: true, name: "Amina's BD") ])
-        
-        // ChecklistGroup(title: "Groceries", imageName: "Groceries"),
-        // ChecklistGroup(title: "Appointments", imageName: "Appointments"),
-        // ChecklistGroup(title: "Chores", imageName: "Chores")
+            ChecklistItem(isChecked: true, name: "Amina's BD") ]),
+        ChecklistGroup(title: "Groceries", imageName: "Groceries", items: [
+            ChecklistItem(isChecked: true, name: "Milk")]),
+        ChecklistGroup(title: "Appointments", imageName: "Appointments", items: [
+            ChecklistItem(isChecked: true, name: "Meet Anna")]),
+        ChecklistGroup(title: "Chores", imageName: "Chores", items: [
+            ChecklistItem(isChecked: true, name: "Tidy up the room")])
     ]
     
     override func viewDidLoad() {
@@ -33,12 +35,14 @@ class MainViewController: UITableViewController {
         cell.iconView.image = UIImage(named: group.imageName)
         return cell
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //segue - strelochka
-        if segue.identifier == "MainToGroupDetails",
+        if //segue.identifier == "MainToGroupDetails",
            let vc = segue.destination as? GroupDetailsTableViewController,
            let indexPath = tableView.indexPathForSelectedRow {
-                vc.items = groups[indexPath.row].items
+            vc.title = groups[indexPath.row].title
+            vc.items = groups[indexPath.row].items
         }
     }
 }

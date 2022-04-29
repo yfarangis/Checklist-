@@ -128,13 +128,19 @@
                             <outlet property="delegate" destination="XGu-lI-kfX" id="wHG-pd-5Ir"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Birthdays" largeTitleDisplayMode="never" id="m5J-kE-ITA"/>
+                    <navigationItem key="navigationItem" title="Birthdays" largeTitleDisplayMode="never" id="m5J-kE-ITA">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="cto-o6-kaS">
+                            <connections>
+                                <segue destination="EIt-ll-FaT" kind="show" id="pcW-CF-o74"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eez-Nv-mPf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1350.7246376811595" y="30.803571428571427"/>
         </scene>
-        <!--Adding Items Table View Controller-->
+        <!--Add Item-->
         <scene sceneID="F2g-3t-85I">
             <objects>
                 <tableViewController id="EIt-ll-FaT" customClass="AddingItemsTableViewController" customModule="Checklists" customModuleProvider="target" sceneMemberID="viewController">
@@ -166,6 +172,9 @@
                                         <constraint firstAttribute="bottom" secondItem="hEt-hi-Yfp" secondAttribute="bottom" constant="8" id="iMt-Am-FrB"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="textField" destination="hEt-hi-Yfp" id="T8R-fh-aup"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SwitchCell" rowHeight="69" id="YwS-v6-3Mn" customClass="SwitchCell" customModule="Checklists" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="124.5" width="414" height="69"/>
@@ -231,7 +240,7 @@
                             <outlet property="delegate" destination="EIt-ll-FaT" id="ijz-Yg-0M5"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="f1S-UO-nim"/>
+                    <navigationItem key="navigationItem" title="Add Item" id="f1S-UO-nim"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ne-ek-rDw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -256,11 +265,15 @@
             <point key="canvasLocation" x="-91" y="31"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="xcs-YK-1O2"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Birthdays" width="36" height="36"/>
         <image name="checkmark" catalog="system" width="128" height="114"/>
         <image name="chevron.forward" catalog="system" width="96" height="128"/>
         <image name="info.circle" catalog="system" width="128" height="121"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

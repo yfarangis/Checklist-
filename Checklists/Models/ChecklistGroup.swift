@@ -11,3 +11,4 @@ struct ChecklistGroup {
     let imageName: String
     var items: [ChecklistItem]
 }
+
