@@ -189,8 +189,11 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LHc-h2-fTf">
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" title="Switch" translatesAutoresizingMaskIntoConstraints="NO" id="LHc-h2-fTf">
                                             <rect key="frame" x="349" y="19" width="51" height="31"/>
+                                            <connections>
+                                                <action selector="SwitchDidChange:" destination="YwS-v6-3Mn" eventType="valueChanged" id="HTa-jb-igI"/>
+                                            </connections>
                                         </switch>
                                     </subviews>
                                     <constraints>
@@ -202,6 +205,9 @@
                                         <constraint firstItem="Dgm-Z6-HHb" firstAttribute="top" secondItem="HMs-0j-vAx" secondAttribute="top" constant="8" id="xPQ-jq-zGI"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="switchRemind" destination="LHc-h2-fTf" id="2ad-DV-Baz"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TimeDateCell" rowHeight="66" id="14d-jx-zsx" customClass="TimeDateCell" customModule="Checklists" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="193.5" width="414" height="66"/>
@@ -233,6 +239,10 @@
                                         <constraint firstItem="v9r-Tz-kuW" firstAttribute="centerY" secondItem="nuj-XM-wla" secondAttribute="centerY" id="h9u-kY-J3d"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="DatePicker" destination="v9r-Tz-kuW" id="8RC-yv-NB2"/>
+                                    <outlet property="TimeDateCell" destination="nuj-XM-wla" id="iSb-jF-zb8"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

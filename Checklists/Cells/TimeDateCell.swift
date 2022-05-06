@@ -9,6 +9,8 @@ import UIKit
 
 class TimeDateCell: UITableViewCell {
 
+    @IBOutlet weak var DatePicker: UIDatePicker!
+    @IBOutlet weak var TimeDateCell: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -9,15 +9,22 @@ import UIKit
 
 class SwitchCell: UITableViewCell {
 
+    var onSwitchChange: (() -> Void)?
+  
+    @IBOutlet weak var switchRemind: UISwitch!
+
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
-
+    
+    @IBAction func SwitchDidChange(_ sender: UISwitch) {
+        print("switch value:\(sender.isOn)")
+        onSwitchChange?()
+    }
 }
+
+

@@ -10,13 +10,13 @@ import UIKit
 class MainViewController: UITableViewController {
     let groups: [ChecklistGroup] = [
         ChecklistGroup(title: "Brithdays", imageName: "Birthdays", items: [
-            ChecklistItem(isChecked: true, name: "Amina's BD") ]),
-        ChecklistGroup(title: "Groceries", imageName: "Groceries", items: [
-            ChecklistItem(isChecked: true, name: "Milk")]),
+            ChecklistItem(isChecked: false, name: "Amina's BD", remindMe: true, dueDate: Date()) ]),
+        ChecklistGroup(title: "Groceries", imageName: "Groceries", items: []),
+                       //items: [ChecklistItem(isChecked: true, name: "Milk", remindMe: false, dueDate: nil)]),
         ChecklistGroup(title: "Appointments", imageName: "Appointments", items: [
-            ChecklistItem(isChecked: true, name: "Meet Anna")]),
+            ChecklistItem(isChecked: true, name: "Meet Anna", remindMe: true, dueDate: Date())]),
         ChecklistGroup(title: "Chores", imageName: "Chores", items: [
-            ChecklistItem(isChecked: true, name: "Tidy up the room")])
+            ChecklistItem(isChecked: true, name: "Tidy up the room", remindMe: false, dueDate: nil), ChecklistItem(isChecked: false, name: "Laundry", remindMe: true, dueDate: Date())])
     ]
     
     override func viewDidLoad() {
@@ -33,6 +33,7 @@ class MainViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "GroupCell", for: indexPath) as! GroupTableViewCell
         cell.titleLabel.text = group.title
         cell.iconView.image = UIImage(named: group.imageName)
+        cell.subtitle.text = group.getRemainings()
         return cell
     }
     
