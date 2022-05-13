@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DC00267328103A2F00D6ED6D /* GroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC00267228103A2F00D6ED6D /* GroupTableViewCell.swift */; };
+		DC09C247282E8E0900B684B9 /* GroupDetailsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09C246282E8E0900B684B9 /* GroupDetailsProtocol.swift */; };
 		DC171B132819389900B20CE6 /* TimeDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC171B122819389900B20CE6 /* TimeDateCell.swift */; };
 		DC3B5D9228099D27008D620A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3B5D9128099D27008D620A /* AppDelegate.swift */; };
 		DC3B5D9428099D27008D620A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3B5D9328099D27008D620A /* SceneDelegate.swift */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		DC00267228103A2F00D6ED6D /* GroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTableViewCell.swift; sourceTree = "<group>"; };
+		DC09C246282E8E0900B684B9 /* GroupDetailsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDetailsProtocol.swift; sourceTree = "<group>"; };
 		DC171B122819389900B20CE6 /* TimeDateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDateCell.swift; sourceTree = "<group>"; };
 		DC3B5D8E28099D27008D620A /* Checklists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checklists.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC3B5D9128099D27008D620A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,14 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		DC09C245282E8DF200B684B9 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				DC09C246282E8E0900B684B9 /* GroupDetailsProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		DC3B5D8528099D27008D620A = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +95,7 @@
 		DC3B5D9028099D27008D620A /* Checklists */ = {
 			isa = PBXGroup;
 			children = (
+				DC09C245282E8DF200B684B9 /* Protocol */,
 				DC9D52A92812C8CE003C3073 /* Controllers */,
 				DC0026712810399600D6ED6D /* Cells */,
 				DC3B5DA5280D9234008D620A /* Models */,
@@ -192,6 +203,7 @@
 				DC9D52AD2812CDFB003C3073 /* ChecklistItem .swift in Sources */,
 				DC9D52B12812DF11003C3073 /* ChecklistItemCell.swift in Sources */,
 				DC9D52B32812DF93003C3073 /* GroupDetailsTableViewController.swift in Sources */,
+				DC09C247282E8E0900B684B9 /* GroupDetailsProtocol.swift in Sources */,
 				DC9D52B5281687DD003C3073 /* AddingItemsTableViewController.swift in Sources */,
 				DC3B5DAA280D928B008D620A /* ChecklistGroup.swift in Sources */,
 				DC3B5D9428099D27008D620A /* SceneDelegate.swift in Sources */,
