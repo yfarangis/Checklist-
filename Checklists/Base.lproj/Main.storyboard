@@ -250,7 +250,13 @@
                             <outlet property="delegate" destination="EIt-ll-FaT" id="ijz-Yg-0M5"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Add Item" id="f1S-UO-nim"/>
+                    <navigationItem key="navigationItem" title="Add Item" id="f1S-UO-nim">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="8bH-tC-9qc">
+                            <connections>
+                                <action selector="didTapDoneButton:" destination="EIt-ll-FaT" id="zL1-zi-P0Z"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ne-ek-rDw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

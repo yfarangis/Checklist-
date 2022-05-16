@@ -17,6 +17,7 @@
 		DC3B5D9B28099D2A008D620A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC3B5D9A28099D2A008D620A /* Assets.xcassets */; };
 		DC3B5D9E28099D2A008D620A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC3B5D9C28099D2A008D620A /* LaunchScreen.storyboard */; };
 		DC3B5DAA280D928B008D620A /* ChecklistGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3B5DA9280D928B008D620A /* ChecklistGroup.swift */; };
+		DC44A95228327B8900A96379 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC44A95128327B8900A96379 /* Notifications.swift */; };
 		DC9D52AD2812CDFB003C3073 /* ChecklistItem .swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9D52AC2812CDFB003C3073 /* ChecklistItem .swift */; };
 		DC9D52B12812DF11003C3073 /* ChecklistItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9D52B02812DF11003C3073 /* ChecklistItemCell.swift */; };
 		DC9D52B32812DF93003C3073 /* GroupDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9D52B22812DF93003C3073 /* GroupDetailsTableViewController.swift */; };
@@ -37,6 +38,7 @@
 		DC3B5D9A28099D2A008D620A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC3B5D9D28099D2A008D620A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC3B5DA9280D928B008D620A /* ChecklistGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistGroup.swift; sourceTree = "<group>"; };
+		DC44A95128327B8900A96379 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		DC9D52AC2812CDFB003C3073 /* ChecklistItem .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChecklistItem .swift"; sourceTree = "<group>"; };
 		DC9D52B02812DF11003C3073 /* ChecklistItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistItemCell.swift; sourceTree = "<group>"; };
 		DC9D52B22812DF93003C3073 /* GroupDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDetailsTableViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 		DC3B5D9028099D27008D620A /* Checklists */ = {
 			isa = PBXGroup;
 			children = (
+				DC44A95028327B3900A96379 /* Extensions  */,
 				DC09C245282E8DF200B684B9 /* Protocol */,
 				DC9D52A92812C8CE003C3073 /* Controllers */,
 				DC0026712810399600D6ED6D /* Cells */,
@@ -115,6 +118,14 @@
 				DC9D52AC2812CDFB003C3073 /* ChecklistItem .swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		DC44A95028327B3900A96379 /* Extensions  */ = {
+			isa = PBXGroup;
+			children = (
+				DC44A95128327B8900A96379 /* Notifications.swift */,
+			);
+			path = "Extensions ";
 			sourceTree = "<group>";
 		};
 		DC9D52A92812C8CE003C3073 /* Controllers */ = {
@@ -206,6 +217,7 @@
 				DC09C247282E8E0900B684B9 /* GroupDetailsProtocol.swift in Sources */,
 				DC9D52B5281687DD003C3073 /* AddingItemsTableViewController.swift in Sources */,
 				DC3B5DAA280D928B008D620A /* ChecklistGroup.swift in Sources */,
+				DC44A95228327B8900A96379 /* Notifications.swift in Sources */,
 				DC3B5D9428099D27008D620A /* SceneDelegate.swift in Sources */,
 				DC00267328103A2F00D6ED6D /* GroupTableViewCell.swift in Sources */,
 				DC9D52BF2816C11C003C3073 /* SwitchCell.swift in Sources */,

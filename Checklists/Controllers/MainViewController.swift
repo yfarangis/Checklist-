@@ -33,7 +33,15 @@ class MainViewController: UITableViewController, GroupDetailsProtocol{
     //MARK: - LYFE CYCLE OF VIEW CONTROLLER
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        // Subscribe to notification on creation of item
+        NotificationCenter.default.addObserver(self, selector: #selector(handleAddNoteNotification), name: .noteHasBeenCreated, object: nil)
+    }
+    @objc
+    func handleAddNoteNotification (_ notification:Notification) {
+        if let object = notification.object as? Int {
+        print ("figuring out how to add new note")
+        print("Received value:\(object)")
+    }
     }
     //MARK: - DATA SOURCE FOR TABLE
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
