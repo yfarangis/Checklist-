@@ -9,7 +9,7 @@ import UIKit
 
 class SwitchCell: UITableViewCell {
 
-    var onSwitchChange: (() -> Void)?
+    var onSwitchChange: ((Bool) -> Void)?
   
     @IBOutlet weak var switchRemind: UISwitch!
 
@@ -23,7 +23,7 @@ class SwitchCell: UITableViewCell {
     
     @IBAction func SwitchDidChange(_ sender: UISwitch) {
         print("switch value:\(sender.isOn)")
-        onSwitchChange?()
+        onSwitchChange?(sender.isOn)
     }
 }
 

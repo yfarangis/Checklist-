@@ -45,6 +45,11 @@ class GroupDetailsTableViewController: UITableViewController {
             vc.title = "Edit Item"
             vc.item  = group.items[indexPath.row]
         }
+        
+        if segue.identifier == "JumpToAddNewItem" {
+            let vc = segue.destination as? AddingItemsTableViewController
+            vc?.categoryName = group.title
+        }
     }
     
     //MARK: - UI TABLE VIEW DELEGATE

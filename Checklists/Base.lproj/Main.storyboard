@@ -131,7 +131,7 @@
                     <navigationItem key="navigationItem" title="Birthdays" largeTitleDisplayMode="never" id="m5J-kE-ITA">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="cto-o6-kaS">
                             <connections>
-                                <segue destination="EIt-ll-FaT" kind="show" id="pcW-CF-o74"/>
+                                <segue destination="EIt-ll-FaT" kind="show" identifier="JumpToAddNewItem" id="pcW-CF-o74"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -163,6 +163,9 @@
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <action selector="TextFieldDidChange:" destination="Rlf-qZ-Fae" eventType="editingChanged" id="g5o-8X-7z4"/>
+                                            </connections>
                                         </textField>
                                     </subviews>
                                     <constraints>
@@ -218,6 +221,9 @@
                                     <subviews>
                                         <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="v9r-Tz-kuW">
                                             <rect key="frame" x="142" y="8" width="256" height="50"/>
+                                            <connections>
+                                                <action selector="DatePicker:" destination="14d-jx-zsx" eventType="valueChanged" id="VI9-Gp-uQV"/>
+                                            </connections>
                                         </datePicker>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date and Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nuj-XM-wla">
                                             <rect key="frame" x="23" y="22.5" width="111" height="21"/>
@@ -282,7 +288,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="xcs-YK-1O2"/>
+        <segue reference="pcW-CF-o74"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Birthdays" width="36" height="36"/>
